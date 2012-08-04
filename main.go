@@ -78,7 +78,7 @@ func loadContent(page string) ([]byte, error) {
 }
 
 func loadTemplate() (*template.Template, error) {
-	path := filepath.Join(root, "pages", "template.html")
+	path := filepath.Join(root, "pages", page, "template.html")
 	return template.ParseFiles(path)
 }
 
